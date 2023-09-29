@@ -1,0 +1,15 @@
+{
+  "name": "graphic-walker-examples",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "workspaces": [
+    "packages/*"
+  ],
+  "author": "",
+  "license": "MIT"
+}

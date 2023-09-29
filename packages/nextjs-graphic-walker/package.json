@@ -1,0 +1,27 @@
+{
+  "name": "nextjs-graphic-walker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@kanaries/graphic-walker": "^0.4.16",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "styled-components": "5.x"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}

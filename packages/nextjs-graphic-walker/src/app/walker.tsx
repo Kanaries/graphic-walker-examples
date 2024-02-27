@@ -1,14 +1,11 @@
-'use client'
+"use client";
 
-import dynamic from 'next/dynamic';
+import { GraphicWalker, getColorConfigFromPalette, getPaletteFromColor } from "@kanaries/graphic-walker";
 
-const GraphicWalker = dynamic(() => {
-    return import('@kanaries/graphic-walker').then(res => res.GraphicWalker)
-}, {
-    ssr: false
-})
+const colorConfig = getColorConfigFromPalette(getPaletteFromColor("slate-500"));
+colorConfig.dark.background = "zinc-900";
 
-function Walker () {
-    return <GraphicWalker />
+function Walker() {
+    return <GraphicWalker dataSource={[]} rawFields={[]} colorConfig={colorConfig} />;
 }
 export default Walker;

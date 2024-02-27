@@ -1,5 +1,8 @@
-// import dynamic from "next/dynamic";
-import GraphicWalker from "./walker";
+import dynamic from "next/dynamic";
+
+const GraphicWalker = dynamic(() => import("./walker").then(res => res.default), {
+    ssr: false,
+});
 
 export default function Home() {
     return (
